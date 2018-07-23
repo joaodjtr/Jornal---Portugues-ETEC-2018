@@ -1,0 +1,145 @@
+a {
+    text-decoration: inherit;
+    color: inherit;
+    position: relative;
+}
+
+section#theme {
+    height: calc( 100% - 55px);
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav#content-inside-theme {
+    height: 692px;
+    width: 1226px;
+    /* PROPORÇÕES ORIGINAIS -> W: 1210px H: 682px
+        Todas elas foram aumentas para melhor espaçamento
+        entre as divs
+    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background: white;
+}
+
+/* PROPORÇÕES ORIGINAIS -> W: 1100px H: 620px
+    Todas elas foram aumentadas em 10%
+*/
+
+.box-model {
+    border-radius: 3px;
+    transition: .25s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .9s ease;
+}
+
+.box-link:nth-child(1) {
+    background-image: url(../imagens/literature.jpg);
+    background-size: cover;
+}
+
+.box-link:nth-child(2) {
+    background: url(../imagens/cinema.jpg);
+    background-size: cover;
+}
+
+.box-link:nth-child(3) {
+    background: url(../imagens/theatre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-link:nth-child(4) {
+    background: url(../imagens/paint.jpg);
+    background-size: cover;
+}
+
+.box-link:nth-child(5) {
+    background: url(../imagens/music.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-link:nth-child(6) {
+    background: url(../imagens/sculpture.jpg);
+    background-size: cover;
+}
+
+
+.square {
+    height: 341px;
+    width: 341px;
+}
+
+.rectangle {
+    height: 341px;
+    width: 528px;
+}
+
+p.category {
+    height: 22px;
+    width: 52px;
+    font-size: 18px;
+    font-family: Century;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 0 0 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: Baskerville;
+    font-weight: 100;
+    color: white;
+    transition: 1s linear;
+    padding: 0 4px 0 4px;
+    border-radius: 2.5px;
+}
+
+.title:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: block;
+    transform: scaleX(0);
+    transition: .5s ease;
+    background: blue;
+}
+
+.box-model:hover .title:after {
+    transform: scaleX(1);
+    visibility: visible;
+    transition: .5s ease;
+}
+
+.box-model:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.box-model:hover .title {
+    background: rgba(0, 0, 0, 0.4);
+    transition: .5s ease;
+}
+
+
+.size-35 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.size-50 {
+    font-size: 50px;
+    text-align: center;
+}

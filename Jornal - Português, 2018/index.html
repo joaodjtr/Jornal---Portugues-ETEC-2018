@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-index.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "27.5%";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('content-links').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a class="links-menu">Desenvolvedores</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Sobre o tema</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Escultura</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section id="theme">
+        <nav id="content-inside-theme">
+            <a class="box-link" href="modelo.html">
+                <div class="box-model rectangle">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-50">Literatura</h1>
+                </div>
+            </a>
+            <a class="box-link" href="#">
+                <div class="box-model square">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-35">Cinema</h1>
+                </div>
+            </a>
+            <a class="box-link" href="#">
+                <div class="box-model square">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-35">Teatro</h1>
+                </div>
+            </a>
+            <a class="box-link" href="#">
+                <div class="box-model square">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-35">Pintura</h1>
+                </div>
+            </a>
+            <a class="box-link" href="#">
+                <div class="box-model square">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-35">Música</h1>
+
+                </div>
+            </a>
+            <a class="box-link" href="#">
+                <div class="box-model rectangle">
+                    <p class="category">Artigo</p>
+                    <h1 class="title size-50">Escultura</h1>
+                </div>
+            </a>
+        </nav>
+    </section>
+
+</body>
+
+</html>

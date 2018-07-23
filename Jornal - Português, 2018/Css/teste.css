@@ -1,0 +1,74 @@
+a{
+    text-decoration: inherit;
+}
+
+body {
+    font-family: Century;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.base {
+    height: 720px;
+    width: 1028px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ddecff;
+/*    box-shadow: 2px 2px 20px #5c5c5c;*/
+    border: 2px solid black;
+}
+
+.box{
+    height: 341px;
+    width: 341px;
+    border: 3px solid black;
+    background-image: url(../imagens/theatre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../imagens/theatre.jpg);
+}
+
+.title {
+    color: white;
+    font-family: Century;
+    text-align: center;
+}
+
+.category {
+    height: 22px;
+    width: 52px;
+    font-size: 18px;
+    font-family: Century;
+    color: white;
+    position: relative;
+}
+
+.size-35 {
+    height: 40px;
+    width: 157px;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -78.5px;
+    margin-top: -40px;
+}
+
+.size-50 {
+    height: 57px;
+    width: 170px;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -28.5px;
+/*    text-decoration: line-through blue;*/
+}

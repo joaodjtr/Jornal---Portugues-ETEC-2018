@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+
+.top {
+    height: 55px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    /*        border-bottom: 2px solid gray;*/
+    box-shadow: 0 2px 5px #cccccc;
+    position: fixed;
+    background: white;
+}
+
+nav.content-inside-header {
+    height: 40px;
+    width: 96%;
+    margin: auto;
+    margin-top: 7.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*        background: yellow;*/
+}
+
+#logo {
+    height: 42px;
+    width: 144px;
+    /*            border: 1px solid black;*/
+}
+
+#l-menu,
+#l-menu img {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#l-menu img{
+    filter: contrast(30%);
+}
+
+#l-menu:hover img{
+    filter: contrast(100%);
+}
+
+#l-menu:hover {
+    filter: contrast(100%);
+}
+
+#overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+#menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s linear;
+    /*    padding: 0 20px;*/
+    /*    box-shadow: -1px 0 20px #727272;*/
+}
+
+
+#menu-btn {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+#menu-btn img {
+    height: 35px;
+    width: 35px;
+    filter: contrast(10%);
+    transition: .5s;
+}
+
+#menu-btn:hover img {
+    filter: contrast(80%);
+}
+
+nav#content-links {
+    width: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 1.25s;
+    z-index: 2;
+    /*    border: 3px solid black;*/
+}
+
+.unit-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*    border: 1px solid black;*/
+}
+
+a.links-menu {
+    line-height: 50px;
+    width: auto;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Roboto, Arial;
+    text-transform: uppercase;
+    color: black;
+    filter: contrast(10%);
+    transition: 1s;
+    z-index: 2;
+
+}
+
+a.links-menu:before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+/*    top: calc( 50% - 3px);*/
+    bottom: 0;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: .5s ease;
+    background: blue;
+    z-index: 1;
+
+}
+
+a.links-menu:hover {
+    filter: contrast(100%);
+}
+
+a.links-menu:hover:before {
+    transform: scaleX(1);
+}
