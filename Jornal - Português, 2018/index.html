@@ -8,16 +8,22 @@
     <script>
         function openMenu() {
             document.getElementById('overlay').style.width = "100%";
-            document.getElementById('menu').style.width = "27.5%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu').style.height = "100%";
             document.getElementById('menu-btn').style.display = 'flex';
             document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
         }
 
         function closeMenu() {
             document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
             document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.height = "100%";
             document.getElementById('menu-btn').style.display = 'none';
             document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
         }
 
     </script>
@@ -39,9 +45,6 @@
             <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
             <nav id="content-links">
                 <div class="unit-link">
-                    <a class="links-menu">Desenvolvedores</a>
-                </div>
-                <div class="unit-link">
                     <a class="links-menu">Sobre o tema</a>
                 </div>
                 <div class="unit-link">
@@ -61,6 +64,12 @@
                 </div>
                 <div class="unit-link">
                     <a class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+            <nav id="content-link-developers">
+                <div class="unit-link">
+                    <a class="link-developers">Conheça os desenvolvedores</a>
                 </div>
             </nav>
         </div>
