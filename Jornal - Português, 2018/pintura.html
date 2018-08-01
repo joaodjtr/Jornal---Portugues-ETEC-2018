@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-model.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
+            document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a href="contexto.html" class="links-menu">Contexto Histórico</a>
+                </div>
+                <div class="unit-link">
+                    <a href="literatura.html" class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="cinema.html" class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a href="teatro.html" class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a href="pintura.html" class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="musica.html" class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a href="escultura.html" class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <section id="matter">
+        <div id="matter-background" class="pintura"></div>
+
+        <div class="box-title">
+            <h1 class="title-article">A <span class="underline-effect">Pintura</span> no Romantismo Inglês</h1>
+        </div>
+
+        <article id="article">
+            <p>O Romantismo inglês nasceu por volta de 1780 na obra de pintores como James Barry, John Hamilton Mortimer, John Brown, George Romney e Henry Fuseli, insatisfeitos com o Academicismo reinante.</p>
+
+            <p>John Varley no início do século XIX recomendava a seus discípulos que se baseassem na natureza para tudo, mas dois dos maiores nomes do Romantismo inglês, John Constable e William Turner, foram muito além. Mesmo sendo admiradores do classicismo, preferiam uma interpretação altamente personalista da natureza, buscando efeitos inusitados de atmosfera e luz. Quando Constable expôs em Paris no Salão de 1824 seus trabalhos foram considerados "a própria natureza". Quanto a Turner, suas pesquisas sobre efeitos atmosféricos e luminosos o levaram a se tornar um dos precursores do Abstracionismo. Outros paisagistas importantes foram Francis Danby e John Martin, capturando os aspectos mais dramáticos do mundo natural.</p>
+
+            <figure class="esq">
+                <img src="imagens/pintura-img-1.jpg" />
+                <figcaption>John Constable: A catedral de Salisbury </figcaption>
+            </figure>
+
+            <p>O interesse pela natureza foi direcionado por outros para o retrato de animais, um gênero ainda quase inexplorado e que teve bons sucessos com Edwin Landseer e George Stubbs. Por outro lado, considerando esgotado o filão da paisagem europeia, artistas como William Hodges, Richard Parkes Bonington e Samuel Prout viajaram extensamente em busca do pitoresco e do exótico, chegando à Austrália. No campo do retrato se desenvolve uma preocupação em revelar o mundo interior e a psicologia do sujeito. Retratistas importantes foram Thomas Lawrence e Richard Payne Knight, enquanto que a pintura histórica de caráter medievalista foi praticada por Richard Parkes Bonington.</p>
+
+            <p>A vida interiorana foi retratada por David Wilkie de forma despretensiosa, exemplo que foi seguido por William Mulready com um tom mais idealista. A burguesia vitoriana foi um grande mercado para a pintura de gênero, narrativa e pitoresca, mostrando as cenas do cotidiano com uma atenção simpática e observação minuciosa. Os temas podiam passar das vistas panorâmicas, de William Powell Frith, às cenas líricas e intimistas de Augustus Egg, ou girar em torno das dificuldades das classes menos favorecidas, como em Luke Fildes, mesclando o sentimentalismo do Romantismo tardio com uma descrição objetiva influenciada pelo Realismo.</p>
+
+            <figure class="dir">
+                <img src="imagens/pintura-img-2.jpg" />
+                <figcaption>William Turner: O incêndio no Parlamento </figcaption>
+            </figure>
+
+            <p>No final do século XIX o Romantismo adquire uma feição peculiar na Escola Pré-Rafaelita, que embora aproveitando recursos do Realismo sua base conceitual era toda romântica e idealista, desejando recuperar uma alegada espiritualidade e pureza que existiria na pintura renascentista anterior a Rafael. Reviveram um espírito corporativo que remetia às guildas medievais, sua produção é marcada por uma técnica de grande refinamento e intenso colorido, em imagens de extraordinária nitidez. Centravam seus temas em cenas pastorais, amorosas, lendas medievais ou folclóricas, e até na tradição clássica, muitas vezes com propósitos moralizantes. Também deram grande impulso à retomada da pintura religiosa na Inglaterra. A escola perduraria ativa até o início do século XX e seus integrantes foram muitos, mas citemos Ford Madox Brown, Edward Burne-Jones, Frederic Leighton,Edward Robert Hughes, William Holman Hunt e John Everett Millais.</p>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>

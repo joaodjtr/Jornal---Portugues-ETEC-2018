@@ -1,0 +1,114 @@
+
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-model.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
+            document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a href="contexto.html" class="links-menu">Contexto Histórico</a>
+                </div>
+                <div class="unit-link">
+                    <a href="literatura.html" class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="cinema.html" class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a href="teatro.html" class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a href="pintura.html" class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="musica.html" class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a href="escultura.html" class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <section id="matter">
+        <div id="matter-background" class="literatura"></div>
+
+        <div class="box-title">
+            <h1 class="title-article">A <span class="underline-effect">Literatura</span> no Romantismo Inglês</h1>
+        </div>
+
+        <article id="article">
+            
+            <p>O Romantismo Inglês surgiu entre os séculos XVIII e XIX, impulsionado pela revolução industrial, pelo capitalismo e pelos ideais da Revolução Francesa. Ao contrario dos movimentos anteriores, os artistas agora tinham mais liberdade para produzir suas obras e utilizavam essa liberdade para falar sobre os problemas sociais da época, como as péssimas condições de trabalho, as longas jornadas de trabalho, a miséria e a escravidão.</p>
+            
+            
+            <p>A primeira obra literária de grande expressão do romantismo inglês foi Lyrical Ballads (1798), de William Wordsworth e Samuel Taylor Coleridge. Nessa obra, Wordsworth se identificava com as classes sociais menos favorecidas que, assim como o artista romântico, sofria com as transformações sociais em vigor. O autor volta o seu olhar para os camponeses, cuja a linguagem era, para ele, a expressão do ser mais humanizado, que vivia em harmonia com a natureza, onde o folclore, o misticismo e deus abriam campo para a imaginação. </p>
+            
+            <figure class="cent">
+                <img  src="imagens/literatura-img-1.jpg"/>
+                <figcaption>"Lyrical Ballads" - obra <br> de William Wordsworth e Samuel Taylor</figcaption>
+            </figure>
+            
+            <figure class="esq">
+                <img  src="imagens/literatura-img-2.jpg"/>
+                <figcaption>"The Little Black Boy" - de <br>William Blake</figcaption>
+            </figure>
+            
+            <p>Outros autores românticos que se destacaram são William Blake, Lord Byron, Percy Bysshe Shelley e John Keats. William Blake se volta para as classes menos favorecidas e escreve poemas como “The Little Black Boy”, dando voz a uma criança escrava. Lord Byron expressava-se de forma melancólica e era considerado um pessimista romântico. Percy Bysshe Shelley escreveu livros de natureza gótica, no qual revela uma perspectiva ateísta do mundo, e já no fim de sua vida escreveu tragédias de origem grega. John Keats sofreu grande influência de poetas gregos do período Helênico, como Homero, e por poetas ingleses do século XVI. Sua obra divide-se entre as frequentes referências à morte e um intenso sentimento de prazer com a vida.</p>
+            
+            <figure class="dir">
+                <img  src="imagens/literatura-img-3.jpg"/>
+                <figcaption>William Wordsworth(1770 - 1850).</figcaption>
+            </figure>
+            
+            <p>Wordsworth, Coleridge e Blake fazem parte da chamada primeira geração do Romantismo Inglês, enquanto nomes como Lord Byron, Percy Bysshe Shelley e John Keats fizeram parte da segunda geração. </p>
+            
+            <p>Uma característica dos românticos era julgar o passado como sendo uma época ideal e idealizar um futuro utópico, na tentativa de fugir do cenário em que viviam.</p>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>

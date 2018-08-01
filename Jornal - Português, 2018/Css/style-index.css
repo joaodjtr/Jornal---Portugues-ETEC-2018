@@ -1,8 +1,3 @@
-a {
-    text-decoration: inherit;
-    color: inherit;
-    position: relative;
-}
 
 section#theme {
     height: calc( 100% - 55px);

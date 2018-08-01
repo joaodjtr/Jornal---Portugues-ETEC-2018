@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-model.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
+            document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a class="links-menu">Contexto Histórico</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <section id="matter">
+        <div id="matter-background"></div>
+        
+        <div class="box-title">
+            <h1 class="title-article"><span class="underline-effect">Apenas</span> um Artigo Sem Sentido Algum</h1>
+        </div>
+
+        <article id="article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ante a libero eleifend auctor eget sed est. Morbi vehicula lorem at tristique efficitur. Sed augue magna, sodales in mi ac, rutrum sagittis neque. Vivamus quis dolor metus. Duis ut pulvinar metus. Nam et eros augue. Proin lorem neque, ultricies ut tristique quis, egestas vel odio. Nunc eu est ut urna iaculis suscipit non quis purus.</p>
+
+            <figure class="esq">
+                    <img src="imagens/example-1.jpg"/>
+                    <figcaption>Sou uma legenda</figcaption>
+                </figure>
+                
+            <p>Quisque quis justo et libero rutrum pretium at id massa. Nunc tempor porttitor tellus et fringilla. Etiam risus nunc, euismod ac tortor sit amet, ultricies luctus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id tellus tincidunt, tincidunt eros vel, aliquet nunc. Aliquam ut tellus euismod, iaculis lacus eu, varius nulla. Morbi tincidunt tincidunt dui, nec venenatis ligula feugiat nec. Phasellus cursus vehicula dictum. Nam nunc sapien, commodo id volutpat tempor, bibendum eu eros. Sed sit amet vulputate sapien.</p>
+            
+            <p>Aliquam eget maximus mi. Etiam ac mattis felis. Nam dignissim auctor velit, ut rutrum neque sollicitudin non. In ac luctus ex, et dictum urna. Ut convallis dignissim hendrerit. Maecenas ornare neque scelerisque eros rhoncus, ac condimentum erat imperdiet. Nulla eros nunc, iaculis vitae lacinia ut, tincidunt id ante. Etiam varius non ipsum sed dignissim. Proin sit amet condimentum nisi, in interdum felis. Nunc in ex vel urna luctus tincidunt interdum eget tortor. Nunc quis ipsum elementum mi molestie feugiat eu at urna. Quisque tempor, urna vitae lacinia posuere, dolor magna porta quam, eget dignissim neque sapien luctus ex. Vivamus nisl eros, tristique vel porta vel, sodales et felis.</p>  
+            <figure class="dir">
+                    <img src="imagens/example-2.jpg"/>
+                    <figcaption>Sou uma outra legenda</figcaption>
+                </figure>
+                
+            <p>Nullam commodo eget dui ut pharetra. Sed at fringilla risus. Cras nec tellus mollis, luctus sem a, ultrices velit. Vivamus rhoncus faucibus felis non laoreet. Sed venenatis velit justo, ac fermentum metus commodo vitae. Sed pretium aliquam lorem, quis imperdiet eros. Nunc convallis eget est et vulputate. Vestibulum eget eleifend risus. Duis iaculis eros sed elit laoreet, vel ullamcorper ipsum tempor. Mauris pharetra velit a ligula dictum ullamcorper. In euismod, elit vitae fermentum iaculis, ex ante lobortis sapien, vitae iaculis diam sem sit amet elit. Sed neque enim, ornare sed velit nec, congue dapibus turpis.</p>
+
+            <p>Morbi at tellus ultrices, porttitor lectus sed, fermentum quam. Sed neque velit, rutrum at tellus quis, hendrerit egestas massa. Curabitur euismod auctor urna vel tempus. Nullam sit amet sapien diam. Donec a erat consectetur, laoreet velit ut, rhoncus risus. Proin quis placerat justo, vitae consectetur metus. Aliquam tempus hendrerit neque a sagittis. Proin fermentum arcu massa, quis aliquet risus pellentesque ut. Duis at mauris et nulla accumsan semper ac et mi.</p>
+        </article>
+    </section>
+
+</body>
+
+</html>

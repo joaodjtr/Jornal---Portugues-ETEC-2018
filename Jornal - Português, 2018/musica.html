@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-model.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
+            document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a href="contexto.html" class="links-menu">Contexto Histórico</a>
+                </div>
+                <div class="unit-link">
+                    <a href="literatura.html" class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="cinema.html" class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a href="teatro.html" class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a href="pintura.html" class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="musica.html" class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a href="escultura.html" class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <section id="matter">
+        <div id="matter-background" class="musica"></div>
+
+        <div class="box-title">
+            <h1 class="title-article">A <span class="underline-effect">Música</span> do Romantismo Inglês</h1>
+        </div>
+
+        <article id="article">
+            <p>A música romântica é aquela composta segundo os princípios da estética do romantismo, predominante durante o século XIX (1801-1900), na história da música, corresponde ao período que se seguiu ao classicismo. A sinfonia nº 3 de Beethoven, obra de 1804, é por vezes considerada como o marco do fim do período clássico e do começo da música romântica.
+            </p>
+            <figure class="esq">
+                <img src="imagens/musica-img-1.jpg"/>
+                <figcaption>Ludwig van Beethoven(1770-1827)</figcaption>
+            </figure>
+            
+            <p>A época do romantismo musical coincide com o romantismo na literatura, filosofia e nas artes plásticas. Assim como na literatura, a música procurava se desligar da arte do passado pondo-se mais ao alcance da nova classe social em ascensão, a burguesia, e invadindo as salas de concerto, conquistando um novo público de uma nova estética. Essa estética apresenta uma música caracterizada pela presença marcante e intensa da emoção ao passo que a forma se tornou mais livre e os tons mais ricos. Foram estabelecidos vários conceitos de tonalidade para descrever os vocabulários harmônicos herdados do classicismo e do barroco. Os compositores do romantismo tentaram juntar e aperfeiçoar estruturas harmônicas já conhecidas, por meio de inovações, procurando maior contraste, maior fluidez, e nas obras mais extensas, cobrir as necessidades harmônicas. Além de ter dado um caráter mais pessoal a musica, deixando-a mais interiorizada e com mais sentimento de uma forma bem introspectiva de facto. Ao longo desse período encontramos uma música mais poética do que abstrata, mais melódica do que harmônica e mais orgânica do que mosaica. O movimento de uma sonata nas mãos de um compositor romântico é apresentado como uma serie de episódios pitorescos sem nenhuma ligação ou unidade formal. A música, mais precisamente a ópera, incorporava temas de fantasia e lendas medievais. Os românticos distanciaram-se dos valores prevalecentes durante a idade da razão. A consequência natural era que se interessassem pelo irracional, pelo macabro, sendo a loucura, o horror e o sobrenatural temas comuns.
+            </p>
+            <figure class="dir">
+                <img src="imagens/musica-img-2.jpg"/>
+                <figcaption>Niccolò Paganini(1782-1840)</figcaption>
+            </figure>
+            <p>A ideia geral do romantismo é que a verdade não poderia ser deduzida a partir de verdades inquestionáveis. Certas realidades só poderiam ser captadas através da emoção, do sentimento e da intuição. Por essa razão, a música romântica é caracterizada pela maior flexibilidade das formas musicais e procurando focar mais o sentimento transmitido pela música do que propriamente a estética, ao contrário do classicismo. </p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+#matter {
+    height: auto;
+    width: 80%;
+    padding: 2% 0 2.5% 0;
+    /*    display: flex;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    /*    border: 3px solid black;*/
+}
+
+#matter-background {
+    height: 600px;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+
+}
+
+
+
+/* backgrounds */
+
+.literatura {
+    background: url(../imagens/bg-literatura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contexto {
+    background: url(../imagens/bg-contexto.jpg);
+    background-size: cover;
+}
+
+.contexto:before {
+    content: 'Revolução Industrial na Inglaterra';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-top: 5px;
+}
+
+.escultura{
+    background: url(../imagens/bg-escultura.jpg);
+    background-size: cover;
+}
+
+.escultura:before {
+    content: 'Jean-Baptiste Carpeaux: Ugolino e seus Filhos';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-top: 5px;
+}
+
+.pintura {
+    background: url(../imagens/bg-pintura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pintura:before {
+    content: 'John Martin: Manfred no Jungfrau';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-top: 5px;
+}
+
+.box-title {
+    height: auto;
+    width: 57%;
+    display: inline-block;
+}
+
+
+h1.title-article {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+h2.subtitle{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-left: -5%;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+/*
+h1.title-article:after{
+    content: attr(title) " ";
+    font-size: 115px;
+    color: #f1f0ff; 
+    position: absolute;
+    top: 0;
+    left: 105%;
+}
+*/
+
+span.underline-effect {
+    background-image: linear-gradient(to right, rgb(255, 96, 96), rgb(169, 79, 235));
+    background-size: 100% 0.2em;
+    background-position: 25% 88%;
+    background-repeat: no-repeat;
+}
+
+#article {
+    height: auto;
+    width: 55%;
+    display: block;
+    position: relative;
+    left: 22.5%;
+    /*    border: 1px solid black;*/
+}
+
+#article p{
+    font-size: 20px;
+    font-family: Century;
+    font-weight: 300;
+    text-align: left;
+    color: #404040;
+}
+
+#article ul{
+    font-size: 20px;
+    font-family: Century;
+    font-weight: 300;
+    color: #404040;
+    display: inline-block;
+}
+
+#article li{
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+#article p:first-child::first-letter {
+    font-size: 40px;
+    color: black;
+}
+
+figure figcaption {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-top: 5px;
+}
+
+.esq {
+    display: inline-block;
+    float: left;
+    margin: 15px 30px 25px 0px;
+}
+
+.esq img {
+    height: 260px;
+}
+
+.esq figcaption {
+    text-align: left;
+}
+
+.dir {
+    display: inline-block;
+    float: right;
+    margin: 15px 0px 25px 30px;
+}
+
+.dir img {
+    height: 260px;
+}
+
+.dir figcaption {
+    text-align: left;
+    
+}
+
+.cent{
+    display: block;
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+.cent img{
+    height: 350px;
+}
+
+.teatro {
+    background: url(../imagens/bg-teatro.jpg);
+    background-size: cover;
+    
+}
+
+.content-figures{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.all img{
+    height: 260px;
+    display: block;
+}
+
+
+.musica {
+    background: url(../imagens/bg-musica.png);
+    background-size: cover;
+}
+
+.musica:before {
+    content: 'Franz Liszt';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-top: 5px;
+}

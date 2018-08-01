@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Jornal - Português</title>
+    <meta charset="utf-8">
+    <link href="css/style-common.css" rel="stylesheet">
+    <link href="css/style-model.css" rel="stylesheet">
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').style.width = "100%";
+            document.getElementById('menu').style.width = "calc( 17% - 10px )";
+            document.getElementById('menu').style.paddingLeft = "10px";
+            document.getElementById('menu-btn').style.display = 'flex';
+            document.getElementById('content-links').style.display = 'flex';
+            document.getElementById('content-link-developers').style.display = 'flex';
+        }
+
+        function closeMenu() {
+            document.getElementById('overlay').style.width = "0";
+            document.getElementById('menu-btn').style.display = 'none';
+            document.getElementById('menu').style.width = "0";
+            document.getElementById('menu').style.paddingLeft = "0";
+            document.getElementById('content-links').style.display = 'none';
+            document.getElementById('content-link-developers').style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <header>
+            <nav class="content-inside-header">
+                <div id="logo"><a href="index.html"><img src="imagens/logo.png"></a></div>
+                <div onclick="openMenu()" id="l-menu"><img src="imagens/menu-button.svg" /></div>
+            </nav>
+        </header>
+    </div>
+
+    <div id="overlay">
+        <div id="menu">
+            <a id="menu-btn" onclick="closeMenu()"><img src="imagens/close-button.svg"/></a>
+            <nav id="content-links">
+                <div class="unit-link">
+                    <a href="contexto.html" class="links-menu">Contexto Histórico</a>
+                </div>
+                <div class="unit-link">
+                    <a href="literatura.html" class="links-menu">Literatura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="cinema.html" class="links-menu">Cinema</a>
+                </div>
+                <div class="unit-link">
+                    <a href="teatro.html" class="links-menu">Teatro</a>
+                </div>
+                <div class="unit-link">
+                    <a href="pintura.html" class="links-menu">Pintura</a>
+                </div>
+                <div class="unit-link">
+                    <a href="musica.html" class="links-menu">Música</a>
+                </div>
+                <div class="unit-link">
+                    <a href="escultura.html" class="links-menu">Escultura</a>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <section id="matter">
+        <div id="matter-background" class="contexto"></div>
+
+        <div class="box-title">
+            <h1 class="title-article">O <span class="underline-effect">Contexto Histórico</span> do Romantismo Inglês</h1>
+        </div>
+
+        <article id="article">
+            <p>O período do Romantismo foi de grande contestação social, a Inglaterra, em particular, estava sendo profundamente influenciada pelas ideias da Revolução Francesa e, do mesmo modo, a Revolução Industrial. Foi exatamente em tal contexto social e político que se desencadeou o cenário do Romantismo no país, possibilitando  o nascimento de várias obras literárias, fundamentais ao desenvolvimento do Romantismo.</p>
+            
+            <p>Naquele momento  histórico, a Inglaterra, no século XIX, pôde se afirmar, sem dúvida, como a maior economia política do mundo. Forte, economicamente, do mesmo modo militar, tinha a marinha bem estruturada de tal modo, com o capitalismo avançado e, consequentemente, o modelo produtivo, tendo domínio dos grandes mercados de consumo.</p>
+            
+            <p>Com o maior parque industrial do mundo, não só comercializava seus produtos  como  também era dono de territórios de diversos continentes.</p>
+            
+            <p>O fenômeno da industrialização possibilitou a transferência da população do campo à cidade surgindo assim a sociedade  urbanista. Em 1800 foi realizado um grande censo.  Somente  20% da população vivia nas cidades.  Em 1851 as mesmas tinham  mais de 50%.</p>
+            
+            <figure class="esq">
+                <img src="imagens/contexto-img-1.jpg"/>
+                <figcaption>Em 1851, a maioria da população da Inglaterra<br> vivia nas cidades</figcaption>
+            </figure>
+            
+            <p>Com características liberais, os artistas dirigiam suas atenções para objetivar seus desejos. No entanto, alheio ao mundo em redor e voltando para  si, faz com que o Romantismo não só se caracterize pela defesa da liberdade e privilégio da emoção, como também pela atribuição de valores à experiência individual e à proposição da imaginação.</p>
+            
+            <p>O idealismo, fundamento indispensável, repleto de mistérios, sátiras, defesa da própria morte, o destino é marcado pela infelicidade. Os temas de direito ao sentimento, referem-se ao platonismo,  ao amor, espírito de defesa nacional, a morte como perspectiva de saída diante das frustrações afetivas, os mistérios da vida  cotidiana. A ideologia de mundos imaginativos, o real e o criado, o amor sempre compreendido numa perspectiva difícil. A vida romântica completa de sofrimento, emocionalidade social, as rivalidades entre  famílias na busca da mulher amada.</p>
+            
+            <p>O amor representava muito sofrimento, no entanto, a grande razão da vida, a mulher,  não tendo função social cumpria o papel de procriação,  entendidas como divinas. O amor,  sinônimo de dor. A mulher,  motivo da felicidade.  Quando  recusava a aceitação do amor, a vida para o homem não tinha nenhum sentido, e era motivo de suicídio.</p>
+            
+            <p>As meninas eram criadas para o casamento, serem fiéis aos maridos não  necessitando  estudar, sem envolvimentos políticos, a mais absoluta dependência dos cônjuges. Para os homens, as mulheres tinham função doméstica e reprodutiva. O  domínio do homem era absoluto. A  mulher com a obrigação da fidelidade, sendo que para o homem  era permissível a vida paralela com amantes.</p>
+            
+            <p>Portanto, há o estabelecimento de uma vida cínica e cruel, sobretudo, para a figura feminina, o que caracterizou o movimento em referência. Para os homens, as esposas praticamente existiam para a função de reprodução e zelo pelo lar.</p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
